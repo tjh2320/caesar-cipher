@@ -1,6 +1,4 @@
-# add your code here
 def caesar_cipher(text, shift=5):
-    # Convert text to lower case
     text = text.lower()
     encrypted_text = ''
     
@@ -18,11 +16,6 @@ def caesar_cipher(text, shift=5):
             
     return encrypted_text
 
-# Ask the user for a sentence
 sentence = input("Please enter a sentence: ")
-
-# Encrypt the sentence
 encrypted_sentence = caesar_cipher(sentence)
-
-# Print the encrypted sentence
-print(f"The encrypted sentence is: {encrypted_sentence}")
+print(f"The encrypted sentence is: {encrypted_sentence}")   
