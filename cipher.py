@@ -2,6 +2,7 @@ def caesar_cipher(text, shift=5):
     text = text.lower()
     encrypted_text = ''
     
+    # Loop through each character in the text
     for char in text:
         # Check if the character is an alphabet
         if char.isalpha():
@@ -16,6 +17,5 @@ def caesar_cipher(text, shift=5):
     return encrypted_text
 
 sentence = input("Please enter a sentence: ")
-# Encrypt the sentence
 encrypted_sentence = caesar_cipher(sentence)
-print(f"The encrypted sentence is: {encrypted_sentence}")
+print(f"The encrypted sentence is: {encrypted_sentence}")   
